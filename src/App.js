@@ -18,7 +18,7 @@ const App = () => {
 
   return (
     <>
-      <div>
+      <div className='container'>
         <Tasks tasks={tasks} />
       </div>
     </>
