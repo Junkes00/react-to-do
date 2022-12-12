@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../task/Task.css"
+import "./Task.css"
 
 const Task = ({ task }) => {
   return (
