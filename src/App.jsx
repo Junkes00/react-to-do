@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from "uuid";
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import Tasks from './components/Tasks.jsx';
 import AddTask from './components/AddTask.jsx';
@@ -48,7 +49,7 @@ const App = () => {
   }
 
   return (
-    <>
+    <Router>
       <div className='container'>
         <AddTask handleTaskAddition={handleTaskAddition} />
         <Tasks
@@ -57,7 +58,7 @@ const App = () => {
           handleTaskRemove={handleTaskRemove}
         />
       </div>
-    </>
+    </Router>
   )
 };
 
