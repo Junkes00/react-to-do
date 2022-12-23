@@ -4,6 +4,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import Tasks from './components/Tasks.jsx';
 import AddTask from './components/AddTask.jsx';
+import Header from './components/Header.jsx';
+
 import './App.css';
 
 const App = () => {
@@ -51,6 +53,7 @@ const App = () => {
   return (
     <Router>
       <div className='container'>
+        <Header />
         <AddTask handleTaskAddition={handleTaskAddition} />
         <Tasks
           tasks={tasks}
